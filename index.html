@@ -1,329 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Raza - Frontend Web Developer</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="dark-mode">
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>HR</h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Hassan Raza, a Front-End Developer and Computer Science graduate based in Karachi, Pakistan."
+    />
+    <meta name="theme-color" content="#050b18" />
+
+    <title>Hassan Raza | Front-End Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Hassan Raza home">
+          H<span>R.</span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 id="heroTitle">Hassan Raza</h1>
+            <p class="hero-role">Front-End Developer</p>
+            <p class="hero-summary">
+              Computer Science graduate building responsive and user-friendly
+              websites with HTML, CSS and JavaScript.
+            </p>
+
+            <ul class="hero-skills" aria-label="Core skills">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
             </ul>
-            <div class="nav-actions">
-                <button class="dark-mode-toggle" id="darkModeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-particles"></div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Hassan Raza</span>
-                </h1>
-                <h2 class="hero-subtitle">
-                    <span class="typing-text">Frontend Web Developer</span>
-                </h2>
-                <p class="hero-description">
-                    I create beautiful, responsive, and user-friendly web applications with modern technologies and best practices.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">
+                View My Work <span aria-hidden="true">→</span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="Hassan-Raza-CV.pdf"
+                download
+              >
+                Download CV <span aria-hidden="true">↓</span>
+              </a>
             </div>
-            <div class="hero-image">
-                <div class="hero-card">
-                    <div class="card-content">
-                        <img src="IMG_1873.jpeg" alt="Hassan Raza" class="profile-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+          <div class="hero-visual">
+            <span class="dot-grid" aria-hidden="true"></span>
+
+            <div class="portrait-frame">
+              <img
+                src="profile.jpg"
+                alt="Hassan Raza wearing professional attire"
+              />
+            </div>
+
+            <div class="code-card" aria-hidden="true">
+              <div class="code-card-head">
+                <span>&lt;/&gt;</span>
+                <span class="code-dots">••</span>
+              </div>
+              <code>
+                <span>const</span> learner = true;<br />
+                build. learn. improve.
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about" aria-labelledby="aboutTitle">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a passionate Frontend Web Developer with expertise in creating modern, responsive, and visually appealing web applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building user interfaces that are not only functional but also provide exceptional user experiences.
-                    </p>
-                    <p>
-                        My approach combines technical proficiency with creative problem-solving to deliver solutions that meet both client requirements and industry standards. I stay updated with the latest web technologies and best practices to ensure that every project I work on is built using modern, efficient, and scalable methods.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3 class="stat-number" data-target="0">0</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat-number" data-target="1">0</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat-number" data-target="0">0</h3>
-                            <p>Client Satisfaction</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <div class="section-heading reveal">
+            <p class="section-kicker">About me</p>
+            <h2 class="section-title" id="aboutTitle">
+              Learning with purpose. Building step by step.
+            </h2>
+          </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-progress="95"></div>
-                        <span class="skill-percentage">95%</span>
-                    </div>
-                    <p>Semantic markup, accessibility, SEO optimization</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-progress="90"></div>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <p>Modern styling, animations, responsive design</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-progress="85"></div>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                    <p>ES6+, DOM manipulation, async programming</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-progress="92"></div>
-                        <span class="skill-percentage">92%</span>
-                    </div>
-                    <p>Mobile-first approach, cross-device compatibility</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>Firebase</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-progress="80"></div>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <p>Real-time databases, authentication, hosting</p>
-                </div>
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I am a Computer Science graduate from the University of Sindh,
+                Jamshoro, with a strong interest in front-end development.
+              </p>
+              <p>
+                I am strengthening my practical skills through hands-on projects
+                and remote internship experience. My focus is to create clean,
+                responsive and useful web experiences while continuously
+                improving as a developer.
+              </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-calendar-check"></i>
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ServiceBook - Local Service Booking System</h3>
-                        <p class="project-status">In Progress</p>
-                        <p>A comprehensive platform for booking local services with real-time availability, secure payments, and user reviews.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
+            <div class="about-details">
+              <article class="detail-card reveal">
+                <span class="detail-icon" aria-hidden="true">01</span>
+                <div>
+                  <h3>Karachi, Pakistan</h3>
+                  <p>Open to front-end and junior developer opportunities.</p>
                 </div>
-            </div>
-        </div>
-    </section>
+              </article>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Website Design</h3>
-                    <p>Creating visually stunning and intuitive website designs that capture your brand essence and engage your audience.</p>
+              <article class="detail-card reveal">
+                <span class="detail-icon" aria-hidden="true">02</span>
+                <div>
+                  <h3>Computer Science Graduate</h3>
+                  <p>University of Sindh, Jamshoro — Class of 2026.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Frontend Development</h3>
-                    <p>Building robust, scalable, and performant frontend applications using modern frameworks and best practices.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Landing Pages</h3>
-                    <p>Designing high-converting landing pages that drive user engagement and help achieve your business goals.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3>Responsive Websites</h3>
-                    <p>Ensuring your website looks and functions perfectly across all devices, from mobile phones to desktop computers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+              </article>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p><a href="mailto:raohassanraza31@gmail.com">raohassanraza31@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>03163079758</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Pakistan</p>
-                        </div>
-                    </div>
+              <article class="detail-card reveal">
+                <span class="detail-icon" aria-hidden="true">03</span>
+                <div>
+                  <h3>Active Learner</h3>
+                  <p>Focused on practical work, consistency and improvement.</p>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+              </article>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+      <section class="section" id="skills" aria-labelledby="skillsTitle">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2024 Hassan Raza. All rights reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
+          <div class="section-heading reveal">
+            <p class="section-kicker">Current toolkit</p>
+            <h2 class="section-title" id="skillsTitle">Skills I work with</h2>
+            <p class="section-description">
+              A practical foundation I am continuously strengthening through
+              projects and guided learning.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <span class="skill-label">01 / STRUCTURE</span>
+              <h3>HTML5</h3>
+              <p>Semantic structure, accessible content and clean markup.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-label">02 / STYLE</span>
+              <h3>CSS3</h3>
+              <p>Layouts, visual hierarchy, responsiveness and animations.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-label">03 / INTERACTION</span>
+              <h3>JavaScript</h3>
+              <p>Core concepts, DOM interaction and browser-based features.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-label">04 / RESPONSIVE</span>
+              <h3>Responsive Web Design</h3>
+              <p>Interfaces that adapt clearly across desktop and mobile screens.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-label">05 / WORKFLOW</span>
+              <h3>Git &amp; GitHub</h3>
+              <p>Basic version control and sharing project work online.</p>
+            </article>
+          </div>
         </div>
+      </section>
+
+      <section
+        class="section section-alt"
+        id="projects"
+        aria-labelledby="projectsTitle"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Selected work</p>
+            <h2 class="section-title" id="projectsTitle">Projects</h2>
+            <p class="section-description">
+              Academic and practice projects that represent my learning journey.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-number">01</span>
+                <span class="project-type">University FYP</span>
+              </div>
+              <h3>DocLinker</h3>
+              <p>
+                A doctor appointment and healthcare management mobile application
+                with separate Admin, Doctor and Patient panels.
+              </p>
+              <ul class="tech-list" aria-label="DocLinker technologies">
+                <li>React Native</li>
+                <li>Firebase</li>
+                <li>Mobile App</li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-number">02</span>
+                <span class="project-type">Frontend Project</span>
+              </div>
+              <h3>Expense Tracker</h3>
+              <p>
+                A responsive browser-based expense tracking project created to
+                practise front-end structure, styling and JavaScript interaction.
+              </p>
+              <ul class="tech-list" aria-label="Expense Tracker technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experienceTitle">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Experience</p>
+            <h2 class="section-title" id="experienceTitle">
+              Practical learning journey
+            </h2>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card reveal">
+              <p class="experience-date">June 2026 — July 2026</p>
+              <h3>Frontend Developer Intern</h3>
+              <p class="experience-company">Progree · Remote</p>
+              <p>
+                Worked on front-end learning tasks involving HTML, CSS,
+                JavaScript, responsive design and Git/GitHub.
+              </p>
+            </article>
+
+            <article class="experience-card reveal">
+              <p class="experience-date">June 2026 — July 2026</p>
+              <h3>Web Development Intern</h3>
+              <p class="experience-company">SyntecxHub · Remote</p>
+              <p>
+                Completed assigned web development tasks and improved practical
+                coding and problem-solving skills.
+              </p>
+            </article>
+
+            <article class="experience-card education-card reveal">
+              <p class="experience-date">2022 — 2026</p>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="experience-company">
+                University of Sindh, Jamshoro
+              </p>
+              <p>
+                Completed an academic foundation in computing, software
+                development and problem solving.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contactTitle">
+        <div class="container">
+          <div class="contact-card reveal">
+            <div>
+              <p class="section-kicker">Let's connect</p>
+              <h2 id="contactTitle">Open to front-end opportunities.</h2>
+              <p>
+                If you have a junior front-end role, internship or collaborative
+                opportunity, feel free to contact me.
+              </p>
+            </div>
+
+            <div class="contact-links">
+              <a
+                class="contact-link whatsapp-link"
+                href="https://wa.me/923163079758"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>WhatsApp</span><span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="contact-link"
+                href="mailto:raohassanraza31@gmail.com"
+              >
+                <span>Email</span><span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/rao-hassan-raza-4bb295403/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>LinkedIn</span><span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="contact-link"
+                href="https://github.com/raohassanraza"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>GitHub</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content container">
+        <span>© <span id="year"></span> Hassan Raza</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
